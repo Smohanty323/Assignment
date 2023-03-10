@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-10T15:30:47 IST" name="Surefire suite" finished-at="2023-03-10T15:31:19 IST" duration-ms="32269">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.test.runner.TestRunner@2794eab6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-03-10T15:30:47 IST" name="Surefire test" finished-at="2023-03-10T15:31:19 IST" duration-ms="32269">
+      <class name="com.test.runner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.test.runner.TestRunner@2794eab6]" started-at="2023-03-10T15:30:47 IST" name="setUpClass" finished-at="2023-03-10T15:30:48 IST" duration-ms="809" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7fb1820d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="run()[pri:0, instance:com.test.runner.TestRunner@2794eab6]" started-at="2023-03-10T15:30:48 IST" name="run" finished-at="2023-03-10T15:30:48 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.test.runner.TestRunner@2794eab6]" started-at="2023-03-10T15:30:48 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-10T15:30:55 IST" duration-ms="6795" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["This is to test create booking request in restful-booker"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["API documentation for restful-booker"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.test.runner.TestRunner@2794eab6]" started-at="2023-03-10T15:30:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-10T15:30:58 IST" duration-ms="3537" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["This is to test get booking ids request in restful-booker"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["API documentation for restful-booker"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.test.runner.TestRunner@2794eab6]" started-at="2023-03-10T15:30:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-10T15:31:03 IST" duration-ms="5074" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["This is to test get booking by id request in restful-booker"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["API documentation for restful-booker"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.test.runner.TestRunner@2794eab6]" started-at="2023-03-10T15:31:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-10T15:31:11 IST" duration-ms="7351" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["This is to test partial update booking request in restful-booker"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["API documentation for restful-booker"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.test.runner.TestRunner@2794eab6]" started-at="2023-03-10T15:31:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-10T15:31:19 IST" duration-ms="8506" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["This is to test delete booking request in restful-booker"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["API documentation for restful-booker"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.test.runner.TestRunner@2794eab6]" started-at="2023-03-10T15:31:19 IST" name="tearDownClass" finished-at="2023-03-10T15:31:19 IST" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="cucumberSandwichReportGeneration()[pri:0, instance:com.test.runner.TestRunner@2794eab6]" started-at="2023-03-10T15:31:19 IST" name="cucumberSandwichReportGeneration" finished-at="2023-03-10T15:31:25 IST" duration-ms="5534" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cucumberSandwichReportGeneration -->
+      </class> <!-- com.test.runner.TestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>restful-booker</td>
+      <td>10 Mar 2023, 18:15</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">com.test.Stepdefination.BookingSteps.user_get_one_booking_id_from_all_created_booking_ids()</td>
+              <td>3</td>
+              <td class="duration" data-value="1730701200">1.730</td>
+              <td class="duration" data-value="1730701200">2.328</td>
+              <td class="duration" data-value="5192103600">5.192</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.test.Stepdefination.BookingSteps.user_intiate_create_booking_request()</td>
+              <td>1</td>
+              <td class="duration" data-value="1438891100">1.438</td>
+              <td class="duration" data-value="1438891100">1.438</td>
+              <td class="duration" data-value="1438891100">1.438</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.test.Stepdefination.BookingSteps.user_intiate_delete_booking_request()</td>
+              <td>1</td>
+              <td class="duration" data-value="3347831800">3.347</td>
+              <td class="duration" data-value="3347831800">3.347</td>
+              <td class="duration" data-value="3347831800">3.347</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.test.Stepdefination.BookingSteps.user_intiate_get_booking_by_id_request()</td>
+              <td>1</td>
+              <td class="duration" data-value="1974019200">1.974</td>
+              <td class="duration" data-value="1974019200">1.974</td>
+              <td class="duration" data-value="1974019200">1.974</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.test.Stepdefination.BookingSteps.user_intiate_get_booking_ids_request()</td>
+              <td>1</td>
+              <td class="duration" data-value="1734789800">1.734</td>
+              <td class="duration" data-value="1734789800">1.734</td>
+              <td class="duration" data-value="1734789800">1.734</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.test.Stepdefination.BookingSteps.user_intiate_partial_booking_request(java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="2641379100">2.641</td>
+              <td class="duration" data-value="2641379100">2.641</td>
+              <td class="duration" data-value="2641379100">2.641</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.test.Stepdefination.BookingSteps.user_should_able_to_check_all_other_services()</td>
+              <td>5</td>
+              <td class="duration" data-value="982820">0.000</td>
+              <td class="duration" data-value="982820">0.003</td>
+              <td class="duration" data-value="4914100">0.004</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.test.Stepdefination.BookingSteps.user_validate_ping_check_of_application()</td>
+              <td>5</td>
+              <td class="duration" data-value="2266889360">2.266</td>
+              <td class="duration" data-value="2266889360">4.525</td>
+              <td class="duration" data-value="11334446800">11.334</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.test.Stepdefination.BookingSteps.user_validates_create_booking_request_is_successful()</td>
+              <td>1</td>
+              <td class="duration" data-value="1588755500">1.588</td>
+              <td class="duration" data-value="1588755500">1.588</td>
+              <td class="duration" data-value="1588755500">1.588</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.test.Stepdefination.BookingSteps.user_validates_delete_booking_request_is_successful()</td>
+              <td>1</td>
+              <td class="duration" data-value="2371124500">2.371</td>
+              <td class="duration" data-value="2371124500">2.371</td>
+              <td class="duration" data-value="2371124500">2.371</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.test.Stepdefination.BookingSteps.user_validates_firstname_in_response()</td>
+              <td>1</td>
+              <td class="duration" data-value="16144400">0.016</td>
+              <td class="duration" data-value="16144400">0.016</td>
+              <td class="duration" data-value="16144400">0.016</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.test.Stepdefination.BookingSteps.user_validates_get_booking_by_id_request_is_successful()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.test.Stepdefination.BookingSteps.user_validates_get_booking_ids_request_is_successful()</td>
+              <td>1</td>
+              <td class="duration" data-value="999800">0.000</td>
+              <td class="duration" data-value="999800">0.000</td>
+              <td class="duration" data-value="999800">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.test.Stepdefination.BookingSteps.user_validates_lastname_in_response()</td>
+              <td>1</td>
+              <td class="duration" data-value="19306900">0.019</td>
+              <td class="duration" data-value="19306900">0.019</td>
+              <td class="duration" data-value="19306900">0.019</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.test.Stepdefination.BookingSteps.user_validates_partial_booking_request_is_successful()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>15</td>
+            <td>25</td>
+            <td class="duration">1.266</td>
+            <td class="duration">11.334</td>
+            <td class="duration">31.664</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

@@ -5,7 +5,7 @@ import java.io.IOException;
 
 import com.test.Bookings.CreateBooking;
 import com.test.Bookings.DeleteBooking;
-import com.test.Bookings.GetBooking;
+import com.test.Bookings.GetBookingIDs;
 import com.test.Bookings.PartialUpdateBooking;
 import com.test.Helper.BookingIdsHelper;
 import com.test.SetUp.BookerHealthCheck;
@@ -17,8 +17,15 @@ import io.restassured.response.Response;
 
 public class BookingSteps 
 {
+/*
+ * declaring a static booking id as 0, so that if booking ids list will return 0, can create a new booking 
+ */
 	static int bookingId =0;
-	
+
+/*
+ * here all the methods are converted java functions of the feature file lines
+ * calling each individual classes public methods for proper maintenance
+ */
 	@When("User validate ping check of application")
 	public void user_validate_ping_check_of_application() throws FileNotFoundException, IOException {
 		BookerHealthCheck.healthCheck();
@@ -41,14 +48,18 @@ public class BookingSteps
 
 	@When("User intiate get booking ids request")
 	public void user_intiate_get_booking_ids_request() {
-		GetBooking.getBookingIDSList();
+		GetBookingIDs.getBookingIDSList();
 	}
 
 	@Then("User validates get booking ids request is successful")
 	public void user_validates_get_booking_ids_request_is_successful() {
-		GetBooking.validateGetBookingIDs();
+		GetBookingIDs.validateGetBookingIDs();
 	}
 
+/*
+ * user get a random booking id, incase there is not any more booking id left, 
+ * then this method will create a new booking id and then proceed for other actions like delete , get details, partial update
+ */
 	@Given("User get one booking id from all created booking ids")
 	public void user_get_one_booking_id_from_all_created_booking_ids() throws FileNotFoundException, IOException {
 		bookingId = BookingIdsHelper.getExistingId();
@@ -61,12 +72,12 @@ public class BookingSteps
 
 	@When("User intiate get booking by id request")
 	public void user_intiate_get_booking_by_id_request() throws FileNotFoundException, IOException {
-		GetBooking.getBookingDetailsById(bookingId);
+		GetBookingIDs.getBookingDetailsById(bookingId);
 	}
 
 	@Then("User validates get booking by id request is successful")
 	public void user_validates_get_booking_by_id_request_is_successful() {
-		GetBooking.validateGetBookingDetails();
+		GetBookingIDs.validateGetBookingDetails();
 	}
 
 	@When("^User intiate partial booking request with (.+) and (.+)$")

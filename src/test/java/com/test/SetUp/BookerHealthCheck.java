@@ -18,6 +18,9 @@ import io.restassured.specification.RequestSpecification;
 
 public class BookerHealthCheck 
 {
+/*
+ * before each call, to check the health of the application 	
+ */
 	private static Response response =null;
 	
 	public static void healthCheck() throws FileNotFoundException, IOException {

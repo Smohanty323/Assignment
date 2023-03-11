@@ -21,6 +21,9 @@ public class DeleteBooking {
 	public static Response response=null;
 	public static int actualBookingId=0;
 
+/*
+* used rest assured methods to delete a booking by id	
+*/	
 	public static void deleteBooking(int bookingId) throws FileNotFoundException, IOException{
 
 				try {
@@ -44,6 +47,9 @@ public class DeleteBooking {
 				}	
 	}
 	
+/*
+* Validate response status code as per standard and validating the deleted booking id is not present inside the get booking ids List 
+*/	
 	public static void validateDeleteBookingResponse()
 	{
 		if(response.getStatusCode()==HttpStatus.SC_CREATED)

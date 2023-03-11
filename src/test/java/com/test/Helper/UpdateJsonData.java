@@ -10,7 +10,10 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 public class UpdateJsonData {
-	
+
+/*
+ * primilarly used to update the one json data in json file, first updating the data then write back to the file	
+ */
 	@SuppressWarnings("unchecked")
 	public static void updateJson(String key, String value) throws FileNotFoundException, IOException, ParseException {
 		

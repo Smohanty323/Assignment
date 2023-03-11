@@ -17,6 +17,9 @@ import net.masterthought.cucumber.ReportBuilder;
 import net.masterthought.cucumber.json.support.Status;
 import net.masterthought.cucumber.presentation.PresentationMode;
 
+/*
+ * adding feature file to step defination with help of Glue
+ */
 		@CucumberOptions(features={"src/test/resources/BookingFeatureFiles"},dryRun=false,
 				glue= {"com.test.Stepdefination"},
 				plugin= {"json:target/jsonReports/restful-booker-report.json","html:target/cucumber-html-report.html"},

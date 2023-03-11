@@ -7,7 +7,9 @@ import java.util.Properties;
 
 public class ReadPropertyFiles {
 
-	
+/*
+ * reading property files data helper method, returning the value for given Key 	
+ */
 	public static String getProperty(String filename,String key) throws FileNotFoundException, IOException
 	{
 		 Properties p=new Properties();

@@ -15,10 +15,13 @@ import com.test.Helper.ReadPropertyFiles;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
-public class GetBooking {
+public class GetBookingIDs {
 
 	public static Response response=null;
-	
+
+/*
+* used rest assured methods to get the response for getbookingdetail by id booking request	
+*/	
 	public static Response getBookingDetailsById(int bookingId) throws FileNotFoundException, IOException{
 
 			try {
@@ -39,7 +42,10 @@ public class GetBooking {
 		
 		return response;	
     }
-	
+
+/*
+* Validate response status code as per standard 
+*/	
 	public static void validateGetBookingDetails()
 	{
 		if(response.getStatusCode()==HttpStatus.SC_OK)
@@ -52,7 +58,9 @@ public class GetBooking {
 	
 	
 //	============================================ get bookingIDS ==================================================================
-	
+/*
+* used rest assured methods to get the response for all booking ids request	
+*/	
 	public static Response getBookingIDSList(){
 		
 			try {
@@ -72,7 +80,10 @@ public class GetBooking {
 			}
 			return response;		
 	}
-	
+
+/*
+* Validate response status code as per standard 
+*/	
 	public static void validateGetBookingIDs()
 	{
 		if(response.getStatusCode()==HttpStatus.SC_OK)

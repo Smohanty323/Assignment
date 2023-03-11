@@ -26,7 +26,10 @@ public class CreateBooking
 	
 	public static File fi=null;
 	public static Response response=null;
-	
+
+/*
+ * used rest assured methods to get the response for Create booking request	
+ */
 	public static Response createBookingRequest() throws FileNotFoundException, IOException {
 
 		try {

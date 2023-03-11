@@ -62,7 +62,6 @@ public class PartialUpdateBooking {
 	
 /*
  * Validate response status code as per standard 
-* 
 */
 	public static void validatePartialBookingRequest()
 	{
@@ -74,14 +73,20 @@ public class PartialUpdateBooking {
 		}
 
 	}
-	
+
+/*
+* Validate the updated first name is coming properly in the updated response
+*/	
 	public static void validateFirstNameInPartialUpdate()
 	{
 
 		String actualFirstName = response.jsonPath().get("firstname").toString();	
 		Assert.assertEquals(actualFirstName, expectedFirstName);
 	}
-	
+
+/*
+* Validate the updated last name is coming properly in the updated response
+*/
 	public static void validateLastNameInPartialUpdate()
 	{
 

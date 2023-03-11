@@ -17,7 +17,9 @@ import io.restassured.specification.RequestSpecification;
 
 public class BookerAuth 
 {
-	
+/*
+ * used rest assured methods to get a valid token which will be used for some of the api test cases	
+ */
 	public static String getToken() throws FileNotFoundException, IOException {
 		
 		String uri = ReadPropertyFiles.getProperty("ApplicationConfig", "baseURI");

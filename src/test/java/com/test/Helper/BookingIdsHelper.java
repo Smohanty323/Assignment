@@ -7,11 +7,14 @@ import io.restassured.response.Response;
 import java.util.Collections;
 import java.util.List;
 
-import com.test.Bookings.GetBooking;
+import com.test.Bookings.GetBookingIDs;
 
 
 public class BookingIdsHelper {
 
+/*
+ * here trying to get one booking id from all booking ids list
+ */
     public static int getExistingId() {
     	try {
 	        List<Integer> bookingIds = getBookingIds();
@@ -24,8 +27,11 @@ public class BookingIdsHelper {
     	}
     }
 
+/*
+ * getting the list of booking and returning list of ids as a helper function     
+ */
     public static List<Integer> getBookingIds() {
-        Response getBookingIdsResponse = GetBooking.getBookingIDSList();
+        Response getBookingIdsResponse = GetBookingIDs.getBookingIDSList();
         JsonPath jsonPath = getBookingIdsResponse.jsonPath();
         return jsonPath.getList("bookingid");
     }

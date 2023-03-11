@@ -1,4 +1,6 @@
- Pre-Requsite - 
+Restful-booker API Test Automation
+
+Pre-Requsite - 
  
  Software Instalation -
  1. Java - version 8 or more

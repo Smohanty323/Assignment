@@ -8,7 +8,7 @@
           <include name="setUpClass"/>
           <include name="cucumberSandwichReportGeneration"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
+          <include name="runScenario" invocation-numbers="3"/>
         </methods>
       </class> <!-- com.test.runner.TestRunner -->
     </classes>

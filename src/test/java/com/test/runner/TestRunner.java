@@ -40,7 +40,7 @@ public class TestRunner extends AbstractTestNGCucumberTests{
 				 List<String> jsonFiles = new ArrayList<>();
 				 jsonFiles.add("target/jsonReports/restful-booker-report.json");
 				 File reportOutputDirectory = null;
-				 reportOutputDirectory = new File(System.getProperty("user.dir") + "/report/SandwichReports" + System.currentTimeMillis());
+				 reportOutputDirectory = new File(System.getProperty("user.dir") + "/report");
 
 				 String projectName="restful-booker";
 				 Configuration configuration = new Configuration(reportOutputDirectory, projectName);

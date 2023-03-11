@@ -28,7 +28,7 @@ Pre-Requsite -
 	to run any one feature file add any one tag present in src/test/resource/BookingFeaturefiles/regression.feature file
 	Then right click on the TestRunner.java file and run as TestNGtest 
 	
-Repoting 
+Reporting 
 1. I have provided one after test solution - where no need to ope any reports to validate, it will automatically open in chrome browser (cucmber html report)
 2. user can find the same report after execution refresh the project and then report/cucumber-html-report/overview-features.html
  here user can click on the API documentation for restful-booker link under Feature section 
